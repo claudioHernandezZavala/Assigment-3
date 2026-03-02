@@ -1,5 +1,6 @@
-# Instructions :
-- [ ]git clone repo https://github.com/claudioHernandezZavala/Assigment-3
-- [ ] cd /repo
-- [ ]npm install
- - [ ]npm run dev
+## Instructions
+
+- [ ] `git clone https://github.com/claudioHernandezZavala/Assigment-3.git`
+- [ ] `cd Assigment-3`
+- [ ] `npm install`
+- [ ] `npm run dev`
