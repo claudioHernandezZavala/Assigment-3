@@ -1,8 +1,8 @@
 import { useState } from "react";
 import winGif from "./assets/winner.gif";
-import tsk from "./assets/tsk.gif";
+import tsk from "./assets/draw.gif";
 function Square({ value, onClick, highlight }) {
-  const className = highlight ? "square highlight" : "square"; // Improvement #4
+  const className = highlight ? "square highlight" : "square"; //improvement #4
   return (
     <button className={className} onClick={onClick}>
       {value}
@@ -90,8 +90,9 @@ export default function Game() {
   const moves = history.map((step, move) => {
     let locationText = "";
     if (move > 0) {
-      const row = Math.floor(step.moveIndex / 3) + 1; // Improvement #5
-      const col = (step.moveIndex % 3) + 1; // Improvement #5
+      //immprovement #5
+      const row = Math.floor(step.moveIndex / 3) + 1;
+      const col = (step.moveIndex % 3) + 1;
       locationText = ` (${row}, ${col})`;
     }
 
